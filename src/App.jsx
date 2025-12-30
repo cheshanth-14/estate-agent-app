@@ -5,22 +5,28 @@ import SearchPage from './pages/SearchPage';
 import PropertyPage from './pages/PropertyPage';
 import HomePage from './pages/HomePage';
 import ContactPage from './pages/ContactPage';
+import SignInPage from './pages/SignInPage';
+import RegisterPage from './pages/RegisterPage';
 import { FavoritesProvider } from './context/FavoritesContext';
+import { AuthProvider } from './context/AuthContext';
 
 function App() {
     return (
-        <FavoritesProvider>
-            <Router>
-                <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
-                    <Navbar />
-                    <main style={{ flex: 1, padding: '2rem 1rem', maxWidth: '1400px', margin: '0 auto', width: '100%', boxSizing: 'border-box' }}>
-                        <Routes>
-                            <Route path="/" element={<HomePage />} />
-                            <Route path="/properties" element={<SearchPage />} />
-                            <Route path="/contact" element={<ContactPage />} />
-                            <Route path="/property/:id" element={<PropertyPage />} />
-                        </Routes>
-                    </main>
+        <AuthProvider>
+            <FavoritesProvider>
+                <Router>
+                    <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
+                        <Navbar />
+                        <main style={{ flex: 1, padding: '2rem 1rem', maxWidth: '1400px', margin: '0 auto', width: '100%', boxSizing: 'border-box' }}>
+                            <Routes>
+                                <Route path="/" element={<HomePage />} />
+                                <Route path="/properties" element={<SearchPage />} />
+                                <Route path="/contact" element={<ContactPage />} />
+                                <Route path="/property/:id" element={<PropertyPage />} />
+                                <Route path="/signin" element={<SignInPage />} />
+                                <Route path="/register" element={<RegisterPage />} />
+                            </Routes>
+                        </main>
                     <footer style={{
                         background: 'linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)',
                         textAlign: 'center',
@@ -43,6 +49,7 @@ function App() {
                 </div>
             </Router>
         </FavoritesProvider>
+    </AuthProvider>
     );
 }
 
