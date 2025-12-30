@@ -15,9 +15,9 @@ function App() {
         <AuthProvider>
             <FavoritesProvider>
                 <Router>
-                    <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
+                    <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', width: '100%', overflowX: 'hidden' }}>
                         <Navbar />
-                        <main style={{ flex: 1, padding: '2rem 1rem', maxWidth: '1400px', margin: '0 auto', width: '100%', boxSizing: 'border-box' }}>
+                        <main style={{ flex: 1, padding: '1rem 0.5rem', maxWidth: '1400px', margin: '0 auto', width: '100%', boxSizing: 'border-box' }}>
                             <Routes>
                                 <Route path="/" element={<HomePage />} />
                                 <Route path="/properties" element={<SearchPage />} />
@@ -30,7 +30,7 @@ function App() {
                     <footer style={{
                         background: 'linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)',
                         textAlign: 'center',
-                        padding: '2.5rem 2rem',
+                        padding: '2rem 1rem',
                         color: 'rgba(255,255,255,0.8)',
                         marginTop: 'auto'
                     }}>

@@ -62,15 +62,17 @@ const RegisterPage = () => {
       display: 'flex', 
       alignItems: 'center', 
       justifyContent: 'center',
-      background: 'linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)'
+      background: 'linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)',
+      padding: '1rem'
     }}>
       <div style={{
         background: 'white',
-        padding: '3rem',
+        padding: '2rem',
         borderRadius: '16px',
         boxShadow: '0 20px 40px rgba(0,0,0,0.1)',
         width: '100%',
-        maxWidth: '400px'
+        maxWidth: '400px',
+        margin: '0 auto'
       }}>
         <h2 style={{ 
           textAlign: 'center', 
