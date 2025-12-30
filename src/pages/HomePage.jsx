@@ -1,54 +1,96 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaSearch, FaHome, FaKey, FaHandHoldingUsd } from 'react-icons/fa';
+import { motion } from 'framer-motion';
 
 const HomePage = () => {
     return (
-        <div className="home-page">
+        <motion.div 
+            className="home-page"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.6 }}
+        >
             {/* Hero Section */}
-            <div className="hero-section" style={{
-                backgroundImage: 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/img/hero_bg.jpg")',
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-                height: '70vh',
-                display: 'flex',
-                flexDirection: 'column',
-                justifyContent: 'center',
-                alignItems: 'center',
-                color: 'white',
-                textAlign: 'center',
-                padding: '1rem',
-                borderRadius: 'var(--radius-md)',
-                marginBottom: '4rem',
-                boxShadow: 'var(--shadow-lg)'
-            }}>
-                <h1 style={{ fontSize: '3.5rem', marginBottom: '1.5rem', fontWeight: '800', textShadow: '2px 2px 4px rgba(0,0,0,0.5)', color: '#fff' }}>
-                    Find Your Dream Home
-                </h1>
-                <p style={{ fontSize: '1.4rem', marginBottom: '2.5rem', maxWidth: '700px', textShadow: '1px 1px 2px rgba(0,0,0,0.5)' }}>
-                    Browse our exclusive collection of properties and find the perfect place to live.
-                </p>
-                <Link to="/properties" className="btn btn-accent" style={{
-                    fontSize: '1.25rem',
-                    padding: '1rem 3rem',
-                    gap: '0.75rem',
-                    display: 'inline-flex',
+            <motion.div 
+                className="hero-section" 
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                style={{
+                    backgroundImage: 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/img/hero_bg.jpg")',
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    height: '70vh',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    justifyContent: 'center',
                     alignItems: 'center',
-                    fontWeight: '700',
-                    boxShadow: '0 4px 6px rgba(0,0,0,0.2)',
-                    transform: 'scale(1)',
-                    transition: 'transform 0.2s',
-                    borderRadius: '50px'
-                }}>
-                    <FaSearch /> Start Your Search
-                </Link>
-            </div>
+                    color: 'white',
+                    textAlign: 'center',
+                    padding: '1rem',
+                    borderRadius: 'var(--radius-md)',
+                    marginBottom: '4rem',
+                    boxShadow: 'var(--shadow-lg)'
+                }}
+            >
+                <motion.h1 
+                    initial={{ opacity: 0, y: 30 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, delay: 0.4 }}
+                    style={{ fontSize: '3.5rem', marginBottom: '1.5rem', fontWeight: '800', textShadow: '2px 2px 4px rgba(0,0,0,0.5)', color: '#fff' }}
+                >
+                    Find Your Dream Home
+                </motion.h1>
+                <motion.p 
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, delay: 0.6 }}
+                    style={{ fontSize: '1.4rem', marginBottom: '2.5rem', maxWidth: '700px', textShadow: '1px 1px 2px rgba(0,0,0,0.5)' }}
+                >
+                    Browse our exclusive collection of properties and find the perfect place to live.
+                </motion.p>
+                <motion.div
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.6, delay: 0.8 }}
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                >
+                    <Link to="/properties" className="btn btn-accent" style={{
+                        fontSize: '1.25rem',
+                        padding: '1rem 3rem',
+                        gap: '0.75rem',
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        fontWeight: '700',
+                        boxShadow: '0 4px 6px rgba(0,0,0,0.2)',
+                        borderRadius: '50px'
+                    }}>
+                        <FaSearch /> Start Your Search
+                    </Link>
+                </motion.div>
+            </motion.div>
 
             <div className="container" style={{ textAlign: 'center' }}>
-                <h2 style={{ fontSize: '2.5rem', color: 'var(--primary)', marginBottom: '3rem' }}>Everything you need</h2>
+                <motion.h2 
+                    initial={{ opacity: 0, y: 30 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, delay: 1.0 }}
+                    style={{ fontSize: '2.5rem', color: 'var(--primary)', marginBottom: '3rem' }}
+                >
+                    Everything you need
+                </motion.h2>
 
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2.5rem', textAlign: 'left' }}>
-                    <div className="card feature-card" style={{ padding: '2.5rem', transition: 'all 0.3s ease', position: 'relative' }}>
+                    <motion.div 
+                        className="card feature-card" 
+                        initial={{ opacity: 0, y: 50 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6, delay: 1.2 }}
+                        whileHover={{ y: -8, transition: { duration: 0.3 } }}
+                        style={{ padding: '2.5rem', position: 'relative' }}
+                    >
                         <div style={{ background: 'linear-gradient(135deg, #00d0b0 0%, #009b82 100%)', width: '70px', height: '70px', borderRadius: '16px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1.5rem', boxShadow: '0 4px 15px rgba(0, 208, 176, 0.4)' }}>
                             <FaHome size={32} color="white" />
                         </div>
@@ -59,9 +101,16 @@ const HomePage = () => {
                         <Link to="/properties" style={{ display: 'inline-block', marginTop: '1rem', color: 'var(--accent)', fontWeight: '600', textDecoration: 'none' }}>
                             Browse Homes &rarr;
                         </Link>
-                    </div>
+                    </motion.div>
 
-                    <div className="card feature-card" style={{ padding: '2.5rem', transition: 'all 0.3s ease', position: 'relative' }}>
+                    <motion.div 
+                        className="card feature-card" 
+                        initial={{ opacity: 0, y: 50 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6, delay: 1.4 }}
+                        whileHover={{ y: -8, transition: { duration: 0.3 } }}
+                        style={{ padding: '2.5rem', position: 'relative' }}
+                    >
                         <div style={{ background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)', width: '70px', height: '70px', borderRadius: '16px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1.5rem', boxShadow: '0 4px 15px rgba(102, 126, 234, 0.4)' }}>
                             <FaHandHoldingUsd size={32} color="white" />
                         </div>
@@ -72,9 +121,16 @@ const HomePage = () => {
                         <span style={{ display: 'inline-block', marginTop: '1rem', color: 'var(--text-light)', fontWeight: '500' }}>
                             Coming Soon
                         </span>
-                    </div>
+                    </motion.div>
 
-                    <div className="card feature-card" style={{ padding: '2.5rem', transition: 'all 0.3s ease', position: 'relative' }}>
+                    <motion.div 
+                        className="card feature-card" 
+                        initial={{ opacity: 0, y: 50 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6, delay: 1.6 }}
+                        whileHover={{ y: -8, transition: { duration: 0.3 } }}
+                        style={{ padding: '2.5rem', position: 'relative' }}
+                    >
                         <div style={{ background: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)', width: '70px', height: '70px', borderRadius: '16px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1.5rem', boxShadow: '0 4px 15px rgba(245, 87, 108, 0.4)' }}>
                             <FaKey size={32} color="white" />
                         </div>
@@ -85,14 +141,10 @@ const HomePage = () => {
                         <Link to="/properties" style={{ display: 'inline-block', marginTop: '1rem', color: 'var(--accent)', fontWeight: '600', textDecoration: 'none' }}>
                             Find Rentals &rarr;
                         </Link>
-                    </div>
+                    </motion.div>
                 </div>
             </div>
             <style>{`
-                .feature-card:hover {
-                    transform: translateY(-8px);
-                    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-                }
                 .feature-card::before {
                     content: '';
                     position: absolute;
@@ -108,11 +160,8 @@ const HomePage = () => {
                 .feature-card:hover::before {
                     opacity: 1;
                 }
-                .btn-accent:hover {
-                    transform: scale(1.05) !important;
-                }
             `}</style>
-        </div>
+        </motion.div>
     );
 };
 
