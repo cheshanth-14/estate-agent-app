@@ -1,0 +1,205 @@
+[
+    {
+        "id": "prop1",
+        "type": "House",
+        "bedrooms": 3,
+        "price": 750000,
+        "tenure": "Freehold",
+        "shortDescription": "Attractive 3 Bed Semi-Detached House",
+        "longDescription": "Attractive three bedroom semi-detached family home situated within 0.5 miles of Petts Wood station with fast trains to London and within easy walking distance of local shops, schools, bus routes and National Trust woodland. The property comprises; two receptions, fitted 18'9 x 10'1 kitchen/breakfast room and conservatory. The property also benefits from having a utility room and cloakroom. To the first floor there are three bedrooms and a family bathroom with separate WC. Additional features include double glazing, gas central heating and a well presented interior...",
+        "location": "London Road, Bromley BR1",
+        "postcodeArea": "BR1",
+        "images": [
+            "/img/prop1_1.jpg",
+            "/img/prop1_2.jpg",
+            "/img/prop1_3.jpg",
+            "/img/prop1_4.jpg",
+            "/img/prop1_5.jpg",
+            "/img/prop1_6.jpg"
+        ],
+        "picture": "/img/prop1_1.jpg",
+        "url": "properties/prop1.html",
+        "dateAdded": "2022-10-12",
+        "added": {
+            "month": "October",
+            "day": 12,
+            "year": 2022
+        },
+        "floorPlanImage": "/img/floorplan.png",
+        "googleMapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2489.123!2d0.082!3d51.385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsDIzJzA2LjAiTiAwwrAwNCc1NS4yIkU!5e0!3m2!1sen!2suk!4v1"
+    },
+    {
+        "id": "prop2",
+        "type": "Flat",
+        "bedrooms": 2,
+        "price": 399995,
+        "tenure": "Freehold",
+        "shortDescription": "Modern 2 Bed Garden Flat",
+        "longDescription": "Presented in excellent decorative order throughout is this two double bedroom, two bathroom, garden flat. <br>The modern fitted kitchen is open plan to the living room which boasts solid wooden floors and includes integrated appliances including a dishwasher & a washing machine. This large open plan benefits from bi folding doors onto a secluded private courtyard garden. Both bedrooms are double sized, and the family bathroom boasts a matching three piece suite a shower attachment over the bath. There is also a separate wet room. There are walnut doors throughout and wiring for Sky TV/aerial points in the living room/kitchen and both bedrooms.<br>This apartment being only five years old, is still under a 10 year building guarantee...",
+        "location": "High Street, Chislehurst BR7",
+        "postcodeArea": "BR7",
+        "images": [
+            "/img/prop2_1.jpg",
+            "/img/prop2_2.jpg",
+            "/img/prop2_3.jpg",
+            "/img/prop2_4.jpg",
+            "/img/prop2_5.jpg",
+            "/img/prop2_6.jpg"
+        ],
+        "picture": "/img/prop2_1.jpg",
+        "url": "properties/prop2.html",
+        "dateAdded": "2022-09-14",
+        "added": {
+            "month": "September",
+            "day": 14,
+            "year": 2022
+        },
+        "floorPlanImage": "/img/floorplan.png",
+        "googleMapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2489.5!2d0.095!3d51.378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsDIyJzQwLjgiTiAwwrAwNSc0Mi4wIkU!5e0!3m2!1sen!2suk!4v1"
+    },
+    {
+        "id": "prop3",
+        "type": "House",
+        "bedrooms": 4,
+        "price": 925000,
+        "tenure": "Freehold",
+        "shortDescription": "Stunning 4 Bed Detached Home",
+        "longDescription": "A magnificent four bedroom detached family home located in one of Orpington's most sought-after residential roads. This property offers extensive living space including three reception rooms, a high-specification kitchen with breakfast bar, and a utility room. The first floor features a master suite with dressing room and ensuite, three further double bedrooms and a luxury family bathroom. Outside, the property boasts a beautifully landscaped 100ft rear garden and a carriage driveway with parking for multiple vehicles.",
+        "location": "London Road, Sevenoaks TN13",
+        "postcodeArea": "TN13",
+        "images": [
+            "/img/prop3_1.jpg",
+            "/img/prop3_2.jpg",
+            "/img/prop3_3.jpg",
+            "/img/prop3_4.jpg",
+            "/img/prop3_5.jpg",
+            "/img/prop3_6.jpg"
+        ],
+        "picture": "/img/prop3_1.jpg",
+        "url": "properties/prop3.html",
+        "dateAdded": "2023-03-20",
+        "added": {
+            "month": "March",
+            "day": 20,
+            "year": 2023
+        },
+        "floorPlanImage": "/img/floorplan.png",
+        "googleMapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2489!2d0.105!3d51.37!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsDIyJzEyLjAiTiAwwrAwNicxOC4wIkU!5e0!3m2!1sen!2suk!4v1"
+    },
+    {
+        "id": "prop4",
+        "type": "House",
+        "bedrooms": 2,
+        "price": 550000,
+        "tenure": "Freehold",
+        "shortDescription": "Charming 2 Bed Detached Bungalow",
+        "longDescription": "Located in a quiet cul-de-sac within easy reach of Orpington town centre, this well-presented two bedroom detached bungalow offers spacious and versatile accommodation. The property features a large lounge with patio doors leading to the garden, a modern fitted kitchen, two double bedrooms and a contemporary owner-managed apartment in a quite cul-de-sac. Benefits include a garage to the side, off-street parking, and a private rear garden with a south-facing aspect. No onward chain.",
+        "location": "Sevenoaks Road, Orpington BR6",
+        "postcodeArea": "BR6",
+        "images": [
+            "/img/prop4_1.jpg",
+            "/img/prop4_2.jpg",
+            "/img/prop4_3.jpg",
+            "/img/prop4_4.jpg",
+            "/img/prop4_5.jpg",
+            "/img/prop4_6.jpg"
+        ],
+        "picture": "/img/prop4_1.jpg",
+        "url": "properties/prop4.html",
+        "dateAdded": "2023-01-15",
+        "added": {
+            "month": "January",
+            "day": 15,
+            "year": 2023
+        },
+        "floorPlanImage": "/img/floorplan.png",
+        "googleMapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2489!2d0.1!3d51.37!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsDIyJzEyLjAiTiAwwrAwNicwMC4wIkU!5e0!3m2!1sen!2suk!4v1"
+    },
+    {
+        "id": "prop5",
+        "type": "Flat",
+        "bedrooms": 1,
+        "price": 275000,
+        "tenure": "Leasehold",
+        "shortDescription": "Luxury 1 Bed Town Centre Apartment",
+        "longDescription": "A fantastic opportunity to purchase this modern one bedroom apartment situated in a prime location in Orpington. The property offers an open-plan kitchen/living area with integrated appliances, a spacious double bedroom with fitted wardrobes, and a stylish family bathroom. Further benefits include a private balcony, communal roof terrace, and secure underground parking. Ideal for first-time buyers or investors. Long lease remaining.",
+        "location": "High Street, Orpington BR6",
+        "postcodeArea": "BR6",
+        "images": [
+            "/img/prop5_1.jpg",
+            "/img/prop5_2.jpg",
+            "/img/prop5_3.jpg",
+            "/img/prop5_4.jpg",
+            "/img/prop5_5.jpg",
+            "/img/prop5_6.jpg"
+        ],
+        "picture": "/img/prop5_1.jpg",
+        "url": "properties/prop5.html",
+        "dateAdded": "2023-05-10",
+        "added": {
+            "month": "May",
+            "day": 10,
+            "year": 2023
+        },
+        "floorPlanImage": "/img/floorplan.png",
+        "googleMapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2489!2d0.09!3d51.37!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsDIyJzEyLjAiTiAwwrAwNScyNC4wIkU!5e0!3m2!1sen!2suk!4v1"
+    },
+    {
+        "id": "prop6",
+        "type": "House",
+        "bedrooms": 3,
+        "price": 625000,
+        "tenure": "Freehold",
+        "shortDescription": "Well Presented 3 Bed Family Home",
+        "longDescription": "This well presented three bedroom semi-detached house is situated in a popular residential area within walking distance of local amenities and bus routes. The property comprises a spacious lounge/diner, a modern fitted kitchen, and a downstairs cloakroom. Upstairs there are three good sized bedrooms and a family bathroom. To the rear is a well-maintained garden with a patio area, and to the front is off-street parking for two cars. Double glazing and gas central heating throughout.",
+        "location": "Crofton Lane, Orpington BR5",
+        "postcodeArea": "BR5",
+        "images": [
+            "/img/prop6_1.jpg",
+            "/img/prop6_2.jpg",
+            "/img/prop6_3.jpg",
+            "/img/prop6_4.jpg",
+            "/img/prop6_5.jpg",
+            "/img/prop6_6.jpg"
+        ],
+        "picture": "/img/prop6_1.jpg",
+        "url": "properties/prop6.html",
+        "dateAdded": "2022-11-25",
+        "added": {
+            "month": "November",
+            "day": 25,
+            "year": 2022
+        },
+        "floorPlanImage": "/img/floorplan.png",
+        "googleMapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2489!2d0.08!3d51.37!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsDIyJzEyLjAiTiAwwrAwNCc0OC4wIkU!5e0!3m2!1sen!2suk!4v1"
+    },
+    {
+        "id": "prop7",
+        "type": "Flat",
+        "bedrooms": 2,
+        "price": 425000,
+        "tenure": "Share of Freehold",
+        "shortDescription": "Spacious 2 Bed Flat near Petts Wood Station",
+        "longDescription": "A beautifully presented and spacious two bedroom second floor flat, ideally located within a few minutes' walk of Petts Wood station. The property features a large living/dining room, a modern kitchen with high-quality appliances, two double bedrooms and a contemporary family bathroom. Other features include secure entry phone system, communal gardens and a private garage. Long lease and share of freehold. Highly recommended.",
+        "location": "Station Road, Petts Wood BR5",
+        "postcodeArea": "BR5",
+        "images": [
+            "/img/prop7_1.jpg",
+            "/img/prop7_2.jpg",
+            "/img/prop7_3.jpg",
+            "/img/prop7_4.jpg",
+            "/img/prop7_5.jpg",
+            "/img/prop7_6.jpg"
+        ],
+        "picture": "/img/prop7_1.jpg",
+        "url": "properties/prop7.html",
+        "dateAdded": "2023-02-14",
+        "added": {
+            "month": "February",
+            "day": 14,
+            "year": 2023
+        },
+        "floorPlanImage": "/img/floorplan.png",
+        "googleMapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2489!2d0.08!3d51.39!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsDIzJzI0LjAiTiAwwrAwNCc0OC4wIkU!5e0!3m2!1sen!2suk!4v1"
+    }
+]
