@@ -1,0 +1,163 @@
+[
+    {
+        "id": "prop1",
+        "type": "house",
+        "price": 450000,
+        "bedrooms": 4,
+        "dateAdded": "2023-10-15",
+        "postcode": "OX1 3PT",
+        "shortDescription": "A stunning 4-bedroom Victorian family home.",
+        "longDescription": "This immaculate Victorian terraced house offers a perfect blend of period features and modern living. Located in a sought-after area, it boasts a spacious double reception room, a contemporary kitchen/diner, and a delightful rear garden. The property has been finished to a high standard throughout.",
+        "images": [
+            "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1576941089067-2de3c901e126?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80"
+        ],
+        "floorPlan": "https://dummyimage.com/600x400/eee/333.png&text=Floor+Plan+1",
+        "location": {
+            "lat": 51.7520,
+            "lng": -1.2577
+        }
+    },
+    {
+        "id": "prop2",
+        "type": "flat",
+        "price": 275000,
+        "bedrooms": 2,
+        "dateAdded": "2023-11-20",
+        "postcode": "E1 6AN",
+        "shortDescription": "Modern 2-bedroom apartment with city views.",
+        "longDescription": "A bright and airy two-bedroom apartment located on the 5th floor of this prestigious development. Features include an open-plan living area, balcony with stunning city views, and access to a residents' gym and concierge service. Perfect for young professionals.",
+        "images": [
+            "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1484154218962-a1c002085d2f?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1554995207-c18c203602cb?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80"
+        ],
+        "floorPlan": "https://dummyimage.com/600x400/eee/333.png&text=Floor+Plan+2",
+        "location": {
+            "lat": 51.5154,
+            "lng": -0.0722
+        }
+    },
+    {
+        "id": "prop3",
+        "type": "house",
+        "price": 850000,
+        "bedrooms": 5,
+        "dateAdded": "2023-09-01",
+        "postcode": "CV37 6JE",
+        "shortDescription": "Detached 5-bed character property with large garden.",
+        "longDescription": "Situated in the heart of Stratford-upon-Avon, this magnificent 5-bedroom detached house offers extensive living accommodation. The property features original fireplaces, exposed beams, a large country-style kitchen, and a beautiful landscaped garden.",
+        "images": [
+            "https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1600573472500-149face1030d?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1600566752355-35792bedcfe1?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1599809275311-5d6727720993?auto=format&fit=crop&w=800&q=80"
+        ],
+        "floorPlan": "https://dummyimage.com/600x400/eee/333.png&text=Floor+Plan+3",
+        "location": {
+            "lat": 52.1917,
+            "lng": -1.7083
+        }
+    },
+    {
+        "id": "prop4",
+        "type": "flat",
+        "price": 350000,
+        "bedrooms": 1,
+        "dateAdded": "2023-12-01",
+        "postcode": "BS1 5TR",
+        "shortDescription": "Luxury 1-bedroom penthouse with roof terrace.",
+        "longDescription": "A rare opportunity to acquire a stunning penthouse apartment in the city center. This property boasts double height ceilings, floor-to-ceiling windows, a bespoke high-gloss kitchen, and a private expansive roof terrace ideal for entertaining.",
+        "images": [
+            "https://images.unsplash.com/photo-1515263487990-61b07816b324?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1486304873000-235643847519?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1512918760530-772713481923?auto=format&fit=crop&w=800&q=80"
+        ],
+        "floorPlan": "https://dummyimage.com/600x400/eee/333.png&text=Floor+Plan+4",
+        "location": {
+            "lat": 51.4545,
+            "lng": -2.5879
+        }
+    },
+    {
+        "id": "prop5",
+        "type": "house",
+        "price": 600000,
+        "bedrooms": 3,
+        "dateAdded": "2023-10-30",
+        "postcode": "M20 2AN",
+        "shortDescription": "Contemporary 3-bed eco-home.",
+        "longDescription": "Designed with sustainability in mind, this 3-bedroom home features solar panels, triple glazing, and a heat recovery system. The open-plan layout is perfect for modern families, and it comes with a dedicated parking space and EV charging point.",
+        "images": [
+            "https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1580587771525-78b9dba3b91d?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1602343168117-bb8ffe3e2e9f?auto=format&fit=crop&w=800&q=80"
+        ],
+        "floorPlan": "https://dummyimage.com/600x400/eee/333.png&text=Floor+Plan+5",
+        "location": {
+            "lat": 53.4214,
+            "lng": -2.2384
+        }
+    },
+    {
+        "id": "prop6",
+        "type": "flat",
+        "price": 180000,
+        "bedrooms": 1,
+        "dateAdded": "2023-11-05",
+        "postcode": "L3 4FP",
+        "shortDescription": "Cozy 1-bed flat near waterfront.",
+        "longDescription": "Ideal for a first-time buyer, this cozy one-bedroom flat is situated moments from the historic waterfront. It includes a fitted kitchen, a good-sized bedroom with fitted wardrobes, and easy access to local transport links.",
+        "images": [
+            "https://images.unsplash.com/photo-1536376072261-38c75010e6c9?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1616137466211-f939a420be84?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1616594039964-40891a90b81f?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1595858454796-0158a1f6a152?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1595250462947-f41cb8330fc8?auto=format&fit=crop&w=800&q=80"
+        ],
+        "floorPlan": "https://dummyimage.com/600x400/eee/333.png&text=Floor+Plan+6",
+        "location": {
+            "lat": 53.4084,
+            "lng": -2.9916
+        }
+    },
+    {
+        "id": "prop7",
+        "type": "house",
+        "price": 1200000,
+        "bedrooms": 6,
+        "dateAdded": "2023-08-20",
+        "postcode": "GU25 4AY",
+        "shortDescription": "Prestigious 6-bedroom mansion with pool.",
+        "longDescription": "This exceptional 6-bedroom mansion offers the ultimate in luxury living. Highlights include an indoor heated swimming pool, cinema room, triple garage, and acres of private grounds. Secure gated entry ensures privacy and exclusivity.",
+        "images": [
+            "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1613545325268-9365fd189871?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1613490493582-b36449179d67?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1613977257592-4871e5fcd7c4?auto=format&fit=crop&w=800&q=80"
+        ],
+        "floorPlan": "https://dummyimage.com/600x400/eee/333.png&text=Floor+Plan+7",
+        "location": {
+            "lat": 51.4011,
+            "lng": -0.6033
+        }
+    }
+]
