@@ -22,7 +22,7 @@ const Navbar = () => {
                 @media (min-width: 768px) {
                     .desktop-nav { display: flex !important; }
                     .desktop-auth { display: block !important; }
-                    .desktop-saved { display: inline-flex !important; }
+
                     .mobile-menu-btn { display: none !important; }
                     .user-welcome { display: inline !important; }
                 }
@@ -30,7 +30,7 @@ const Navbar = () => {
                     .container { padding: 0 0.5rem !important; }
                     .desktop-nav { display: none !important; }
                     .desktop-auth { display: none !important; }
-                    .desktop-saved { display: none !important; }
+
                 }
             `}</style>
             <header style={{ background: 'linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)', borderBottom: 'none', position: 'sticky', top: 0, zIndex: 100, boxShadow: '0 4px 20px rgba(0, 0, 0, 0.15)', width: '100%', overflowX: 'hidden' }}>
@@ -53,9 +53,7 @@ const Navbar = () => {
                     </div>
 
                     <div style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
-                        <button className="btn desktop-saved" style={{ background: 'transparent', border: '1px solid rgba(255,255,255,0.3)', color: 'white', gap: '0.5rem', display: 'none' }}>
-                            <FaHeart color="#00d0b0" /> <span>Saved</span>
-                        </button>
+
                         
                         <div className="desktop-auth" style={{ display: 'none' }}>
                             {user ? (
