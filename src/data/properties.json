@@ -89,7 +89,7 @@
     {
         "id": "prop4",
         "type": "House",
-        "bedrooms": 2,
+        "bedrooms": 6,
         "price": 550000,
         "tenure": "Freehold",
         "shortDescription": "Charming 2 Bed Detached Bungalow",
@@ -118,7 +118,7 @@
     {
         "id": "prop5",
         "type": "Flat",
-        "bedrooms": 1,
+        "bedrooms": 5,
         "price": 275000,
         "tenure": "Leasehold",
         "shortDescription": "Luxury 1 Bed Town Centre Apartment",
@@ -176,7 +176,7 @@
     {
         "id": "prop7",
         "type": "Flat",
-        "bedrooms": 2,
+        "bedrooms": 5,
         "price": 425000,
         "tenure": "Share of Freehold",
         "shortDescription": "Spacious 2 Bed Flat near Petts Wood Station",
