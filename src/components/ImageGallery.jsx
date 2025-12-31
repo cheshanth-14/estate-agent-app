@@ -23,7 +23,7 @@ const ImageGallery = ({ images }) => {
                         <img src={img} alt={`Thumb ${idx}`} />
                     </button>
                 ))}
-            </div>
+            </div>           
             <style>{`
         .image-gallery {
           display: flex;

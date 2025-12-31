@@ -22,7 +22,6 @@ const Navbar = () => {
                 @media (min-width: 768px) {
                     .desktop-nav { display: flex !important; }
                     .desktop-auth { display: block !important; }
-
                     .mobile-menu-btn { display: none !important; }
                     .user-welcome { display: inline !important; }
                 }
@@ -30,7 +29,34 @@ const Navbar = () => {
                     .container { padding: 0 0.5rem !important; }
                     .desktop-nav { display: none !important; }
                     .desktop-auth { display: none !important; }
-
+                }
+                .nav-link {
+                    position: relative;
+                    overflow: hidden;
+                }
+                .nav-link::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: -100%;
+                    width: 100%;
+                    height: 100%;
+                    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+                    transition: left 0.5s;
+                }
+                .nav-link:hover::before {
+                    left: 100%;
+                }
+                .nav-link:hover {
+                    background: rgba(0, 208, 176, 0.2);
+                    color: #00d0b0 !important;
+                    transform: translateY(-2px);
+                    box-shadow: 0 4px 8px rgba(0, 208, 176, 0.3);
+                }
+                .mobile-nav-link:hover {
+                    background: rgba(0, 208, 176, 0.2) !important;
+                    border-color: #00d0b0 !important;
+                    transform: translateX(5px);
                 }
             `}</style>
             <header style={{ background: 'linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)', borderBottom: 'none', position: 'sticky', top: 0, zIndex: 100, boxShadow: '0 4px 20px rgba(0, 0, 0, 0.15)', width: '100%', overflowX: 'hidden' }}>
@@ -46,15 +72,13 @@ const Navbar = () => {
                         </Link>
 
                         <nav style={{ display: 'none', gap: '1.5rem' }} className="desktop-nav">
-                            <Link to="/" style={{ textDecoration: 'none', color: 'rgba(255,255,255,0.9)', fontWeight: '500', transition: 'color 0.2s' }}>Home</Link>
-                            <Link to="/properties" style={{ textDecoration: 'none', color: 'rgba(255,255,255,0.9)', fontWeight: '500', transition: 'color 0.2s' }}>Properties</Link>
-                            <Link to="/contact" style={{ textDecoration: 'none', color: 'rgba(255,255,255,0.9)', fontWeight: '500', transition: 'color 0.2s' }}>Contact Us</Link>
+                            <Link to="/" className="nav-link" style={{ textDecoration: 'none', color: 'rgba(255,255,255,0.9)', fontWeight: '500', transition: 'all 0.3s ease', padding: '0.5rem 1rem', borderRadius: '8px', position: 'relative' }}>Home</Link>
+                            <Link to="/properties" className="nav-link" style={{ textDecoration: 'none', color: 'rgba(255,255,255,0.9)', fontWeight: '500', transition: 'all 0.3s ease', padding: '0.5rem 1rem', borderRadius: '8px', position: 'relative' }}>Properties</Link>
+                            <Link to="/contact" className="nav-link" style={{ textDecoration: 'none', color: 'rgba(255,255,255,0.9)', fontWeight: '500', transition: 'all 0.3s ease', padding: '0.5rem 1rem', borderRadius: '8px', position: 'relative' }}>Contact Us</Link>
                         </nav>
                     </div>
 
                     <div style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
-
-                        
                         <div className="desktop-auth" style={{ display: 'none' }}>
                             {user ? (
                                 <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center', flexWrap: 'wrap' }}>
@@ -112,12 +136,16 @@ const Navbar = () => {
                             <Link 
                                 to="/" 
                                 onClick={() => setIsMenuOpen(false)}
+                                className="mobile-nav-link"
                                 style={{ 
                                     textDecoration: 'none', 
                                     color: 'rgba(255,255,255,0.9)', 
                                     fontWeight: '500', 
-                                    padding: '0.5rem 0',
-                                    borderBottom: '1px solid rgba(255,255,255,0.1)'
+                                    padding: '1rem',
+                                    borderRadius: '8px',
+                                    background: 'rgba(255,255,255,0.05)',
+                                    border: '1px solid rgba(255,255,255,0.1)',
+                                    transition: 'all 0.3s ease'
                                 }}
                             >
                                 Home
@@ -125,12 +153,16 @@ const Navbar = () => {
                             <Link 
                                 to="/properties" 
                                 onClick={() => setIsMenuOpen(false)}
+                                className="mobile-nav-link"
                                 style={{ 
                                     textDecoration: 'none', 
                                     color: 'rgba(255,255,255,0.9)', 
                                     fontWeight: '500', 
-                                    padding: '0.5rem 0',
-                                    borderBottom: '1px solid rgba(255,255,255,0.1)'
+                                    padding: '1rem',
+                                    borderRadius: '8px',
+                                    background: 'rgba(255,255,255,0.05)',
+                                    border: '1px solid rgba(255,255,255,0.1)',
+                                    transition: 'all 0.3s ease'
                                 }}
                             >
                                 Properties
@@ -138,12 +170,16 @@ const Navbar = () => {
                             <Link 
                                 to="/contact" 
                                 onClick={() => setIsMenuOpen(false)}
+                                className="mobile-nav-link"
                                 style={{ 
                                     textDecoration: 'none', 
                                     color: 'rgba(255,255,255,0.9)', 
                                     fontWeight: '500', 
-                                    padding: '0.5rem 0',
-                                    borderBottom: '1px solid rgba(255,255,255,0.1)'
+                                    padding: '1rem',
+                                    borderRadius: '8px',
+                                    background: 'rgba(255,255,255,0.05)',
+                                    border: '1px solid rgba(255,255,255,0.1)',
+                                    transition: 'all 0.3s ease'
                                 }}
                             >
                                 Contact Us
