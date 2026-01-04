@@ -2,20 +2,20 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { images } from '../assets/images';
 
-const ImageGallery = ({ images }) => {
+const ImageGallery = ({ images: imagePaths }) => {
     const [activeImage, setActiveImage] = useState(0);
 
     return (
         <div className="image-gallery">
             <div className="main-image-container">
                 <img
-                    src={images[images[activeImage]]}
+                    src={images[imagePaths[activeImage]]}
                     alt="Property Main"
                     className="main-image"
                 />
             </div>
             <div className="thumbnail-strip">
-                {images.map((img, idx) => (
+                {imagePaths.map((img, idx) => (
                     <button
                         key={idx}
                         onClick={() => setActiveImage(idx)}

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useFavorites } from '../context/FavoritesContext';
 import { FaTrash, FaTimes, FaHeart, FaTrashAlt } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import { images } from '../assets/images';
 
 const FavoritesSidebar = () => {
     const { favorites, removeFavorite, clearFavorites, addFavorite } = useFavorites();
@@ -158,7 +159,7 @@ const FavoritesSidebar = () => {
                             className="favorite-item"
                         >
                             <img
-                                src={fav.images[0]}
+                                src={images[fav.images[0]]}
                                 alt={fav.shortDescription}
                                 style={{
                                     width: '50px',
