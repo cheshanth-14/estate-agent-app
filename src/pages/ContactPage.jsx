@@ -14,74 +14,85 @@ const ContactPage = () => {
         >
             <motion.h1 
                 style={{ 
-                    color: 'var(--primary)', 
-                    marginBottom: '3rem', 
+                    color: '#1a1a2e', 
+                    marginBottom: '4rem', 
                     textAlign: 'center',
-                    fontSize: '3rem',
-                    fontWeight: '800'
+                    fontSize: 'clamp(2.5rem, 5vw, 4rem)',
+                    fontWeight: '900',
+                    letterSpacing: '-0.02em',
+                    background: 'linear-gradient(135deg, #1a1a2e 0%, #00d0b0 100%)',
+                    WebkitBackgroundClip: 'text',
+                    WebkitTextFillColor: 'transparent',
+                    backgroundClip: 'text'
                 }}
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
             >
-                Get In Touch
+                Let's Connect
             </motion.h1>
 
             {/* Contact Form Card */}
             <motion.div 
                 className="card" 
                 style={{ 
-                    padding: '4rem', 
-                    background: 'linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)', 
-                    color: 'white',
-                    boxShadow: '0 20px 40px rgba(0,0,0,0.1)',
-                    marginBottom: '3rem'
+                    padding: '3rem', 
+                    background: 'rgba(255, 255, 255, 0.95)', 
+                    backdropFilter: 'blur(20px)',
+                    border: '1px solid rgba(255, 255, 255, 0.2)',
+                    boxShadow: '0 32px 64px rgba(0, 0, 0, 0.1)',
+                    borderRadius: '24px',
+                    marginBottom: '2rem'
                 }}
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
             >
-                <h2 style={{ textAlign: 'center', color: 'white', marginBottom: '3rem', fontSize: '2.5rem', fontWeight: '700' }}>
+                <h2 style={{ textAlign: 'center', color: '#1a1a2e', marginBottom: '2.5rem', fontSize: '2rem', fontWeight: '700', letterSpacing: '-0.01em' }}>
                     Send us a Message
                 </h2>
                 <form onSubmit={(e) => { e.preventDefault(); alert('Thank you for your message! We\'ll get back to you soon.'); }} style={{ display: 'flex', flexDirection: 'column', gap: '2rem', maxWidth: '600px', margin: '0 auto' }}>
 
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
                         <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
-                            <label htmlFor="name" style={{ fontWeight: '600', color: 'white', fontSize: '1rem' }}>Name *</label>
+                            <label htmlFor="name" style={{ fontWeight: '600', color: '#1a1a2e', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Name *</label>
                             <input 
                                 type="text" 
                                 id="name" 
                                 required 
                                 style={{ 
-                                    padding: '1rem', 
-                                    borderRadius: '12px', 
+                                    padding: '1rem 1.25rem', 
+                                    borderRadius: '16px', 
                                     border: '2px solid #e1e5e9',
                                     fontSize: '1rem',
-                                    transition: 'border-color 0.3s ease',
+                                    transition: 'all 0.3s ease',
                                     outline: 'none',
                                     width: '100%',
-                                    boxSizing: 'border-box'
+                                    boxSizing: 'border-box',
+                                    background: 'rgba(255, 255, 255, 0.8)',
+                                    backdropFilter: 'blur(10px)'
                                 }}
                                 onFocus={(e) => e.target.style.borderColor = '#00d0b0'}
                                 onBlur={(e) => e.target.style.borderColor = '#e1e5e9'}
                             />
                         </div>
                         <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
-                            <label htmlFor="email" style={{ fontWeight: '600', color: 'white', fontSize: '1rem' }}>Email *</label>
+                            <label htmlFor="email" style={{ fontWeight: '600', color: '#1a1a2e', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Email *</label>
                             <input 
                                 type="email" 
                                 id="email" 
                                 required 
                                 style={{ 
-                                    padding: '1rem', 
-                                    borderRadius: '12px', 
+                                    padding: '1rem 1.25rem', 
+                                    borderRadius: '16px', 
                                     border: '2px solid #e1e5e9',
                                     fontSize: '1rem',
-                                    transition: 'border-color 0.3s ease',
+                                    transition: 'all 0.3s ease',
                                     outline: 'none',
                                     width: '100%',
-                                    boxSizing: 'border-box'
+                                    boxSizing: 'border-box',
+                                    background: 'rgba(255, 255, 255, 0.8)',
+                                    backdropFilter: 'blur(10px)'
                                 }}
                                 onFocus={(e) => e.target.style.borderColor = '#00d0b0'}
                                 onBlur={(e) => e.target.style.borderColor = '#e1e5e9'}
@@ -90,7 +101,7 @@ const ContactPage = () => {
                     </div>
 
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
-                        <label htmlFor="subject" style={{ fontWeight: '600', color: 'white', fontSize: '1rem' }}>Subject</label>
+                        <label htmlFor="subject" style={{ fontWeight: '600', color: '#1a1a2e', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Subject</label>
                         <Select
                             options={[
                                 { value: 'general', label: 'General Inquiry' },
@@ -104,10 +115,12 @@ const ContactPage = () => {
                                     ...base, 
                                     borderColor: state.isFocused ? '#00d0b0' : '#e1e5e9',
                                     borderWidth: '2px',
-                                    borderRadius: '12px', 
+                                    borderRadius: '16px', 
                                     padding: '0.5rem',
                                     boxShadow: 'none',
                                     minHeight: '56px',
+                                    background: 'rgba(255, 255, 255, 0.8)',
+                                    backdropFilter: 'blur(10px)',
                                     '&:hover': {
                                         borderColor: '#00d0b0'
                                     }
@@ -122,24 +135,26 @@ const ContactPage = () => {
                     </div>
 
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
-                        <label htmlFor="message" style={{ fontWeight: '600', color: 'white', fontSize: '1rem' }}>Message *</label>
+                        <label htmlFor="message" style={{ fontWeight: '600', color: '#1a1a2e', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Message *</label>
                         <textarea 
                             id="message" 
                             required 
                             rows="6" 
                             placeholder="Tell us how we can help you..."
                             style={{ 
-                                padding: '1rem', 
-                                borderRadius: '12px', 
+                                padding: '1rem 1.25rem', 
+                                borderRadius: '16px', 
                                 border: '2px solid #e1e5e9', 
                                 fontFamily: 'inherit', 
                                 resize: 'vertical',
                                 fontSize: '1rem',
-                                transition: 'border-color 0.3s ease',
+                                transition: 'all 0.3s ease',
                                 outline: 'none',
                                 width: '100%',
                                 boxSizing: 'border-box',
-                                minHeight: '140px'
+                                minHeight: '140px',
+                                background: 'rgba(255, 255, 255, 0.8)',
+                                backdropFilter: 'blur(10px)'
                             }}
                             onFocus={(e) => e.target.style.borderColor = '#00d0b0'}
                             onBlur={(e) => e.target.style.borderColor = '#e1e5e9'}
@@ -149,19 +164,22 @@ const ContactPage = () => {
                     <motion.button 
                         type="submit" 
                         style={{ 
-                            padding: '1.2rem 2rem', 
-                            fontSize: '1.1rem', 
+                            padding: '1.25rem 2rem', 
+                            fontSize: '1rem', 
                             fontWeight: '600',
                             background: 'linear-gradient(135deg, #00d0b0 0%, #00b396 100%)',
                             color: 'white',
                             border: 'none',
-                            borderRadius: '12px',
+                            borderRadius: '16px',
                             cursor: 'pointer',
-                            transition: 'transform 0.2s ease',
+                            transition: 'all 0.3s ease',
                             width: '100%',
-                            marginTop: '1rem'
+                            marginTop: '1rem',
+                            textTransform: 'uppercase',
+                            letterSpacing: '0.05em',
+                            boxShadow: '0 8px 24px rgba(0, 208, 176, 0.3)'
                         }}
-                        whileHover={{ scale: 1.02 }}
+                        whileHover={{ scale: 1.02, boxShadow: '0 12px 32px rgba(0, 208, 176, 0.4)' }}
                         whileTap={{ scale: 0.98 }}
                     >
                         Send Message
@@ -173,12 +191,16 @@ const ContactPage = () => {
             <motion.div 
                 className="card" 
                 style={{ 
-                    padding: '4rem', 
-                    background: 'linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)',
+                    padding: '3rem', 
+                    background: 'rgba(26, 26, 46, 0.95)',
+                    backdropFilter: 'blur(20px)',
+                    border: '1px solid rgba(255, 255, 255, 0.1)',
                     color: 'white',
-                    marginBottom: '3rem',
+                    marginBottom: '2rem',
                     position: 'relative',
-                    overflow: 'hidden'
+                    overflow: 'hidden',
+                    borderRadius: '24px',
+                    boxShadow: '0 32px 64px rgba(0, 0, 0, 0.2)'
                 }}
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -186,17 +208,18 @@ const ContactPage = () => {
             >
                 <div style={{
                     position: 'absolute',
-                    top: 0,
-                    right: 0,
-                    width: '100px',
-                    height: '100px',
-                    background: 'linear-gradient(135deg, #00d0b0, rgba(0, 208, 176, 0.3))',
-                    borderRadius: '0 0 0 100px',
-                    opacity: 0.1
+                    top: '-50%',
+                    right: '-50%',
+                    width: '200px',
+                    height: '200px',
+                    background: 'linear-gradient(135deg, #00d0b0, rgba(0, 208, 176, 0.2))',
+                    borderRadius: '50%',
+                    opacity: 0.1,
+                    filter: 'blur(40px)'
                 }}></div>
                 
                 <div style={{ position: 'relative', zIndex: 1, textAlign: 'center' }}>
-                    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem', marginBottom: '3rem' }}>
+                    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem', marginBottom: '2.5rem' }}>
                         <div style={{ 
                             background: 'linear-gradient(135deg, #00d0b0 0%, #00b396 100%)', 
                             padding: '1.5rem', 
@@ -248,18 +271,21 @@ const ContactPage = () => {
                 style={{ 
                     textAlign: 'center', 
                     padding: '3rem 2rem',
-                    background: 'linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%)',
-                    borderRadius: '20px',
-                    marginTop: '2rem'
+                    background: 'rgba(255, 255, 255, 0.9)',
+                    backdropFilter: 'blur(20px)',
+                    borderRadius: '24px',
+                    marginTop: '2rem',
+                    border: '1px solid rgba(255, 255, 255, 0.2)',
+                    boxShadow: '0 32px 64px rgba(0, 0, 0, 0.1)'
                 }}
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.8 }}
             >
-                <h3 style={{ color: 'var(--primary)', fontSize: '1.8rem', marginBottom: '1rem' }}>
+                <h3 style={{ color: '#1a1a2e', fontSize: '1.8rem', marginBottom: '1rem', fontWeight: '700' }}>
                     Ready to Find Your Dream Home?
                 </h3>
-                <p style={{ color: 'var(--text-light)', fontSize: '1.1rem', maxWidth: '600px', margin: '0 auto 2rem' }}>
+                <p style={{ color: '#666', fontSize: '1.1rem', maxWidth: '600px', margin: '0 auto 2rem', lineHeight: '1.6' }}>
                     Whether you're buying, selling, or just exploring, I'm here to help you every step of the way. 
                     Let's make your real estate dreams a reality.
                 </p>
@@ -273,9 +299,12 @@ const ContactPage = () => {
                         textDecoration: 'none',
                         borderRadius: '50px',
                         fontWeight: '600',
-                        fontSize: '1.1rem'
+                        fontSize: '1rem',
+                        textTransform: 'uppercase',
+                        letterSpacing: '0.05em',
+                        boxShadow: '0 8px 24px rgba(26, 26, 46, 0.3)'
                     }}
-                    whileHover={{ scale: 1.05 }}
+                    whileHover={{ scale: 1.05, boxShadow: '0 12px 32px rgba(26, 26, 46, 0.4)' }}
                     whileTap={{ scale: 0.95 }}
                 >
                     Browse Properties
