@@ -1,24 +1,15 @@
 export const filterProperties = (properties, filters) => {
     return properties.filter(prop => {
-        // Type (React Select creates objects {value, label})
-        // filters.type is now passed as string 'any', 'house' etc. from SearchForm
         if (filters.type && filters.type !== 'any' && prop.type.toLowerCase() !== filters.type.toLowerCase()) return false;
 
         // Price Range
-        // properties.json has 'price'
         if (prop.price < filters.minPrice) return false;
         if (prop.price > filters.maxPrice) return false;
 
         // Bedrooms Range
-        // properties.json has 'bedrooms'
         if (prop.bedrooms < filters.minBedrooms) return false;
-        // If maxBedrooms is 10+, treat as "10+" (unlimited) or strictly enforce? 
-        // Usually "10" is max in slider, so maybe effectively no max. 
-        // Let's enforce it strictly for now as per "Max Bedrooms" logic.
         if (filters.maxBedrooms > 0 && filters.maxBedrooms < 10 && prop.bedrooms > filters.maxBedrooms) return false;
 
-        // Search keywords (Fuzzy)
-        // filters.postcodeArea now acts as a general search term
         const searchTerm = filters.postcodeArea.trim().toLowerCase();
         if (searchTerm) {
             const propType = (prop.type || '').toLowerCase();
