@@ -13,17 +13,17 @@ const HomePage = () => {
     }, []);
 
     return (
-        <motion.div 
+        <motion.div
             className="home-page"
             initial={{ opacity: 0 }}
             animate={{ opacity: isLoaded ? 1 : 0 }}
             transition={{ duration: 0.6 }}
         >
             {/* Hero Section */}
-            <motion.div 
-                className="hero-section" 
+            <motion.div
+                className="hero-section"
                 initial={{ opacity: 0, y: 50 }}
-                animate={{ opacity:  isLoaded ? 1 :  0, y: isLoaded ? 0 : 50 }}
+                animate={{ opacity: isLoaded ? 1 : 0, y: isLoaded ? 0 : 50 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
                 style={{
                     backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${heroBg})`,
@@ -42,26 +42,26 @@ const HomePage = () => {
                     boxShadow: 'var(--shadow-lg)'
                 }}
             >
-                <motion.h1 
-                    initial={{ opacity: 0, y:  30 }}
+                <motion.h1
+                    initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: isLoaded ? 1 : 0, y: isLoaded ? 0 : 30 }}
                     transition={{ duration: 0.8, delay: 0.4 }}
                     style={{ fontSize: '3. 5rem', marginBottom: '1.5rem', fontWeight: '800', textShadow: '2px 2px 4px rgba(0,0,0,0.5)', color: '#fff' }}
                 >
                     Find Your Dream Home
-                </motion. h1>
-                <motion. p 
+                </motion.h1>
+                <motion.p
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: isLoaded ? 1 : 0, y: isLoaded ? 0 : 20 }}
                     transition={{ duration: 0.8, delay: 0.6 }}
                     style={{ fontSize: '1.4rem', marginBottom: '2.5rem', maxWidth: '700px', textShadow: '1px 1px 2px rgba(0,0,0,0.5)' }}
                 >
-                    Browse our exclusive collection of properties and find the perfect place to live. 
+                    Browse our exclusive collection of properties and find the perfect place to live.
                 </motion.p>
                 <motion.div
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: isLoaded ? 1 : 0, scale: isLoaded ? 1 : 0.8 }}
-                    transition={{ duration:  0.6, delay: 0.8 }}
+                    transition={{ duration: 0.6, delay: 0.8 }}
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                 >
@@ -81,7 +81,7 @@ const HomePage = () => {
             </motion.div>
 
             <div className="container" style={{ textAlign: 'center' }}>
-                <motion.h2 
+                <motion.h2
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: isLoaded ? 1 : 0, y: isLoaded ? 0 : 30 }}
                     transition={{ duration: 0.8, delay: 1.0 }}
@@ -90,14 +90,14 @@ const HomePage = () => {
                     Everything you need
                 </motion.h2>
 
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem', textAlign: 'left', alignItems: 'stretch', width: '100%', maxWidth: '1200px', margin: '0 auto' }}>
-                    <motion.div 
-                        className="card feature-card" 
-                        initial={{ opacity:  0, y: 50 }}
+                <div className="features-grid">
+                    <motion.div
+                        className="card feature-card"
+                        initial={{ opacity: 0, y: 50 }}
                         animate={{ opacity: isLoaded ? 1 : 0, y: isLoaded ? 0 : 50 }}
                         transition={{ duration: 0.6, delay: 1.2 }}
                         whileHover={{ y: -8, transition: { duration: 0.3 } }}
-                        style={{ padding: '2.5rem', position: 'relative', display: 'flex', flexDirection: 'column', height: '100%' }}
+                        style={{ position: 'relative' }}
                     >
                         <div style={{ background: 'linear-gradient(135deg, #00d0b0 0%, #009b82 100%)', width: '70px', height: '70px', borderRadius: '16px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1.5rem' }}>
                             <FaHome size={32} color="white" />
@@ -106,20 +106,20 @@ const HomePage = () => {
                         <p style={{ color: 'var(--text-main)', lineHeight: '1.6', fontSize: '0.95rem' }}>
                             Find your place with an immersive photo experience and the most listings, including things you won't find anywhere else.
                         </p>
-                        <Link to="/properties" style={{ display:  'inline-block', marginTop: '1rem', color: 'var(--accent)', fontWeight: '600', textDecoration: 'none' }}>
+                        <Link to="/properties" style={{ display: 'inline-block', marginTop: '1rem', color: 'var(--accent)', fontWeight: '600', textDecoration: 'none' }}>
                             Browse Homes &rarr;
                         </Link>
                     </motion.div>
 
-                    <motion.div 
-                        className="card feature-card" 
-                        initial={{ opacity: 0, y:  50 }}
-                        animate={{ opacity: isLoaded ? 1 : 0, y:  isLoaded ? 0 :  50 }}
+                    <motion.div
+                        className="card feature-card"
+                        initial={{ opacity: 0, y: 50 }}
+                        animate={{ opacity: isLoaded ? 1 : 0, y: isLoaded ? 0 : 50 }}
                         transition={{ duration: 0.6, delay: 1.4 }}
                         whileHover={{ y: -8, transition: { duration: 0.3 } }}
-                        style={{ padding: '2.5rem', position: 'relative', display: 'flex', flexDirection: 'column', height: '100%' }}
+                        style={{ position: 'relative' }}
                     >
-                        <div style={{ background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)', width: '70px', height: '70px', borderRadius: '16px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom:  '1.5rem' }}>
+                        <div style={{ background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)', width: '70px', height: '70px', borderRadius: '16px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1.5rem' }}>
                             <FaHandHoldingUsd size={32} color="white" />
                         </div>
                         <h3 style={{ fontSize: '1.5rem', color: 'var(--primary)', marginBottom: '1rem' }}>Sell a Home</h3>
@@ -131,29 +131,47 @@ const HomePage = () => {
                         </span>
                     </motion.div>
 
-                    <motion.div 
-                        className="card feature-card" 
+                    <motion.div
+                        className="card feature-card"
                         initial={{ opacity: 0, y: 50 }}
                         animate={{ opacity: isLoaded ? 1 : 0, y: isLoaded ? 0 : 50 }}
                         transition={{ duration: 0.6, delay: 1.6 }}
-                        whileHover={{ y:  -8, transition: { duration:  0.3 } }}
-                        style={{ padding: '2.5rem', position: 'relative', display: 'flex', flexDirection: 'column', height: '100%' }}
+                        whileHover={{ y: -8, transition: { duration: 0.3 } }}
+                        style={{ position: 'relative' }}
                     >
-                        <div style={{ background:  'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)', width: '70px', height: '70px', borderRadius: '16px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom:  '1.5rem' }}>
+                        <div style={{ background: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)', width: '70px', height: '70px', borderRadius: '16px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1.5rem' }}>
                             <FaKey size={32} color="white" />
                         </div>
                         <h3 style={{ fontSize: '1.5rem', color: 'var(--primary)', marginBottom: '1rem' }}>Rent a Home</h3>
-                        <p style={{ color:  'var(--text-main)', lineHeight: '1.6' }}>
+                        <p style={{ color: 'var(--text-main)', lineHeight: '1.6' }}>
                             We're creating a seamless online experience – from shopping on the largest rental network, to applying, to paying rent.
                         </p>
-                        <Link to="/properties" style={{ display:  'inline-block', marginTop: '1rem', color: 'var(--accent)', fontWeight: '600', textDecoration:  'none' }}>
+                        <Link to="/properties" style={{ display: 'inline-block', marginTop: '1rem', color: 'var(--accent)', fontWeight: '600', textDecoration: 'none' }}>
                             Find Rentals &rarr;
                         </Link>
                     </motion.div>
                 </div>
             </div>
             <style>{`
-                .feature-card:: before {
+                .features-grid {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                    gap: 2rem;
+                    text-align: left;
+                    align-items: stretch;
+                    width: 100%;
+                    max-width: 1200px;
+                    margin: 0 auto;
+                }
+
+                .feature-card {
+                    padding: 2.5rem;
+                    display: flex;
+                    flex-direction: column;
+                    height: 100%;
+                }
+
+                .feature-card::before {
                     content: '';
                     position: absolute;
                     top: 0;
@@ -165,8 +183,19 @@ const HomePage = () => {
                     opacity: 0;
                     transition: opacity 0.3s ease;
                 }
-                . feature-card:hover::before {
+
+                .feature-card:hover::before {
                     opacity: 1;
+                }
+
+                @media (max-width: 768px) {
+                    .feature-card {
+                        padding: 1.5rem;
+                    }
+                    .features-grid {
+                        grid-template-columns: 1fr;
+                        gap: 1.5rem;
+                    }
                 }
             `}</style>
         </motion.div>
