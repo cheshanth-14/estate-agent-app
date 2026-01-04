@@ -90,7 +90,7 @@ const HomePage = () => {
                     Everything you need
                 </motion.h2>
 
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem', textAlign: 'left', alignItems: 'stretch', width: '100%' }}>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem', textAlign: 'left', alignItems: 'stretch', width: '100%', maxWidth: '1200px', margin: '0 auto' }}>
                     <motion.div 
                         className="card feature-card" 
                         initial={{ opacity:  0, y: 50 }}
@@ -103,7 +103,7 @@ const HomePage = () => {
                             <FaHome size={32} color="white" />
                         </div>
                         <h3 style={{ fontSize: '1.5rem', color: 'var(--primary)', marginBottom: '1rem' }}>Buy a Home</h3>
-                        <p style={{ color: 'var(--text-main)', lineHeight: '1.6' }}>
+                        <p style={{ color: 'var(--text-main)', lineHeight: '1.6', fontSize: '0.95rem' }}>
                             Find your place with an immersive photo experience and the most listings, including things you won't find anywhere else.
                         </p>
                         <Link to="/properties" style={{ display:  'inline-block', marginTop: '1rem', color: 'var(--accent)', fontWeight: '600', textDecoration: 'none' }}>
