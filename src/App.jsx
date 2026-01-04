@@ -14,7 +14,7 @@ function App() {
     return (
         <AuthProvider>
             <FavoritesProvider>
-                <Router>
+                <Router basename="/estate-agent-app">
                     <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', width: '100%', overflowX: 'hidden' }}>
                         <Navbar />
                         <main style={{ flex: 1, padding: '1rem 0.5rem', maxWidth: '1400px', margin: '0 auto', width: '100%', boxSizing: 'border-box' }}>
