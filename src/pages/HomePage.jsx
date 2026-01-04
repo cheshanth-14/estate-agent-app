@@ -90,14 +90,14 @@ const HomePage = () => {
                     Everything you need
                 </motion.h2>
 
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2.5rem', textAlign: 'left' }}>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2.5rem', textAlign: 'left', alignItems: 'stretch' }}>
                     <motion.div 
                         className="card feature-card" 
                         initial={{ opacity:  0, y: 50 }}
                         animate={{ opacity: isLoaded ? 1 : 0, y: isLoaded ? 0 : 50 }}
                         transition={{ duration: 0.6, delay: 1.2 }}
                         whileHover={{ y: -8, transition: { duration: 0.3 } }}
-                        style={{ padding: '2. 5rem', position: 'relative' }}
+                        style={{ padding: '2.5rem', position: 'relative', display: 'flex', flexDirection: 'column', height: '100%' }}
                     >
                         <div style={{ background: 'linear-gradient(135deg, #00d0b0 0%, #009b82 100%)', width: '70px', height: '70px', borderRadius: '16px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1.5rem' }}>
                             <FaHome size={32} color="white" />
@@ -117,7 +117,7 @@ const HomePage = () => {
                         animate={{ opacity: isLoaded ? 1 : 0, y:  isLoaded ? 0 :  50 }}
                         transition={{ duration: 0.6, delay: 1.4 }}
                         whileHover={{ y: -8, transition: { duration: 0.3 } }}
-                        style={{ padding:  '2.5rem', position: 'relative' }}
+                        style={{ padding: '2.5rem', position: 'relative', display: 'flex', flexDirection: 'column', height: '100%' }}
                     >
                         <div style={{ background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)', width: '70px', height: '70px', borderRadius: '16px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom:  '1.5rem' }}>
                             <FaHandHoldingUsd size={32} color="white" />
@@ -137,7 +137,7 @@ const HomePage = () => {
                         animate={{ opacity: isLoaded ? 1 : 0, y: isLoaded ? 0 : 50 }}
                         transition={{ duration: 0.6, delay: 1.6 }}
                         whileHover={{ y:  -8, transition: { duration:  0.3 } }}
-                        style={{ padding: '2.5rem', position: 'relative' }}
+                        style={{ padding: '2.5rem', position: 'relative', display: 'flex', flexDirection: 'column', height: '100%' }}
                     >
                         <div style={{ background:  'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)', width: '70px', height: '70px', borderRadius: '16px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom:  '1.5rem' }}>
                             <FaKey size={32} color="white" />
