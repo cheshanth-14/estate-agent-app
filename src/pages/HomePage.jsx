@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaSearch, FaHome, FaKey, FaHandHoldingUsd } from 'react-icons/fa';
 import { motion } from 'framer-motion';
-import heroBg from '../assets/img/hero_bg. jpg';
+import heroBg from '../assets/img/hero_bg.jpg';
 
 const HomePage = () => {
     const [isLoaded, setIsLoaded] = useState(false);
