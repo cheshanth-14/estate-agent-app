@@ -290,7 +290,7 @@ const ContactPage = () => {
                     Let's make your real estate dreams a reality.
                 </p>
                 <motion.a 
-                    href="/properties"
+                    href="/estate-agent-app/properties"
                     style={{
                         display: 'inline-block',
                         padding: '1rem 2rem',
