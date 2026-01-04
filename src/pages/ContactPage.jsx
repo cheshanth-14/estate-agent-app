@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Select from 'react-select';
 import { FaEnvelope, FaPhone, FaUser, FaMapMarkerAlt, FaClock } from 'react-icons/fa';
 import { motion } from 'framer-motion';
@@ -289,8 +290,8 @@ const ContactPage = () => {
                     Whether you're buying, selling, or just exploring, I'm here to help you every step of the way. 
                     Let's make your real estate dreams a reality.
                 </p>
-                <motion.a 
-                    href="/estate-agent-app/properties"
+                <Link 
+                    to="/properties"
                     style={{
                         display: 'inline-block',
                         padding: '1rem 2rem',
@@ -304,11 +305,9 @@ const ContactPage = () => {
                         letterSpacing: '0.05em',
                         boxShadow: '0 8px 24px rgba(26, 26, 46, 0.3)'
                     }}
-                    whileHover={{ scale: 1.05, boxShadow: '0 12px 32px rgba(26, 26, 46, 0.4)' }}
-                    whileTap={{ scale: 0.95 }}
                 >
                     Browse Properties
-                </motion.a>
+                </Link>
             </motion.div>
             
             <style>{`
