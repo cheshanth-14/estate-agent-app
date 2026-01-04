@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaSearch, FaHome, FaKey, FaHandHoldingUsd } from 'react-icons/fa';
 import { motion } from 'framer-motion';
+import heroBg from '../assets/img/hero_bg.jpg';
 
 const HomePage = () => {
     return (
@@ -18,7 +19,7 @@ const HomePage = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
                 style={{
-                    backgroundImage: 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/img/hero_bg.jpg")',
+                    backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${heroBg})`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     height: '70vh',

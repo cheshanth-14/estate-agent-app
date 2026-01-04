@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
+import { images } from '../assets/images';
 
 const ImageGallery = ({ images }) => {
     const [activeImage, setActiveImage] = useState(0);
@@ -8,7 +9,7 @@ const ImageGallery = ({ images }) => {
         <div className="image-gallery">
             <div className="main-image-container">
                 <img
-                    src={images[activeImage]}
+                    src={images[images[activeImage]]}
                     alt="Property Main"
                     className="main-image"
                 />
@@ -20,7 +21,7 @@ const ImageGallery = ({ images }) => {
                         onClick={() => setActiveImage(idx)}
                         className={`thumbnail-btn ${activeImage === idx ? 'active' : ''}`}
                     >
-                        <img src={img} alt={`Thumb ${idx}`} />
+                        <img src={images[img]} alt={`Thumb ${idx}`} />
                     </button>
                 ))}
             </div>           

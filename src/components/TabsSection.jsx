@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
+import { images } from '../assets/images';
 
 const TabsSection = ({ description, floorPlan, mapUrl }) => {
   return (
@@ -22,7 +23,7 @@ const TabsSection = ({ description, floorPlan, mapUrl }) => {
           <h3 style={{ marginTop: 0 }}>Floor Plan</h3>
           <div style={{ textAlign: 'center' }}>
             <img
-              src={floorPlan}
+              src={images[floorPlan]}
               alt="Property Floor Plan"
               style={{ maxWidth: '100%', height: 'auto', borderRadius: 'var(--radius-sm)', border: '1px solid var(--border)' }}
             />

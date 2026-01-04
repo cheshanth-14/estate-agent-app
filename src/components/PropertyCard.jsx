@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import { FaBed, FaHeart, FaMapMarkerAlt, FaHome } from 'react-icons/fa';
 import { useFavorites } from '../context/FavoritesContext';
+import { images } from '../assets/images';
 
 import './PropertyCard.css';
 
@@ -34,7 +35,7 @@ const PropertyCard = ({ property }) => {
                 <Link to={`/property/${property.id}`} style={{ display: 'block', height: '100%', textDecoration: 'none', color: 'inherit' }}>
                     <div className="status-badge">For Sale</div>
                     <img
-                        src={property.images[0]}
+                        src={images[property.images[0]]}
                         alt={property.shortDescription}
                         className="card-image"
                     />
