@@ -90,7 +90,7 @@ const HomePage = () => {
                     Everything you need
                 </motion.h2>
 
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2.5rem', textAlign: 'left', alignItems: 'stretch' }}>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem', textAlign: 'left', alignItems: 'stretch' }}>
                     <motion.div 
                         className="card feature-card" 
                         initial={{ opacity:  0, y: 50 }}
