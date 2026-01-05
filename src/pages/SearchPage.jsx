@@ -39,7 +39,7 @@ const SearchPage = () => {
             </div>
 
             <div className="search-sidebar">
-                <div style={{ position: 'sticky', top: '100px' }}>
+                <div style={{ position: 'sticky', top: '100px', zIndex: 100 }}>
                     <FavoritesSidebar />
                 </div>
             </div>

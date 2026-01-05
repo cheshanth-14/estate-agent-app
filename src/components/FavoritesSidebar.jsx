@@ -87,7 +87,10 @@ const FavoritesSidebar = () => {
                 height: 'fit-content',
                 border: isDragOver ? '2px dashed var(--accent)' : '2px solid transparent',
                 backgroundColor: isDragOver ? 'rgba(0, 208, 176, 0.05)' : 'var(--surface)',
-                transition: 'all 0.2s ease'
+                transition: 'all 0.2s ease',
+                maxHeight: 'calc(100vh - 120px)',
+                overflowY: 'auto',
+                scrollbarWidth: 'thin'
             }}
         >
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
